@@ -1,0 +1,93 @@
+* {
+    font-family: sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-image: url("../images/starry-night.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    color: yellow;
+}
+
+ul#lista-legendas {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+ul#lista-legendas li {
+    font-size: 1.4rem;
+    color: white;
+}
+
+ul#lista-legendas li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul#lista-legendas li::before {
+    content: "";
+    height: 1.2rem;
+    width: 1.2rem;
+    display: inline-block;
+    border: 1px solid white;
+}
+
+.hidrogenio,
+ul#lista-legendas li#legenda-hidrogenio::before {
+    background-color: grey;
+}
+
+.metais,
+ul#lista-legendas li#legenda-metais::before {
+    background-color: #84d24c;
+}
+
+.semimetais,
+ul#lista-legendas li#legenda-semimetais::before {
+    background-color: #78c8b9;
+}
+
+.ametais,
+ul#lista-legendas li#legenda-ametais::before {
+    background-color: #75baff;
+}
+
+.gases-nobres,
+ul#lista-legendas li#legenda-gases-nobres::before {
+    background-color: #b95be8;
+}
+
+main {
+    width: 100%;
+    margin-top: 4%;
+}
+
+main table {
+    width: inherit;
+    color: white;
+    border-collapse: collapse;
+}
+
+#tabela-gigante-foo-bar {
+    height: 70vh;
+}
+
+table tr td {
+    width: 5rem;
+    height: 5rem;
+    font-size: 2rem;
+    text-align: center;
+    border: 1px solid yellow;
+}
